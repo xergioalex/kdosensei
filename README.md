@@ -1,10 +1,10 @@
 # KDoSensei (Karate App)
 
-This repository holds the web layer of **KDo Sensei**—a project that started in **2013** as my **first attempt at building a mobile app**. I was learning how hybrid apps worked, chasing the idea that something I built could live on a phone and help people study Karate the way I wished I could have when I started training.
+This repository holds the web layer of **KDoSensei**. **In 2013 I built it as part of a university project**—together with **Camilo** and **Miguel**—that asked us to take an idea from concept to a working mobile experience. **Miguel practiced Karate**, and we thought it would be **interesting to build a mobile app around that**—a topic we could ground in someone’s real training instead of choosing something arbitrary. We framed the product around **Karate and self-defense education**, and set out to deliver something people could actually install and use, not just a slide deck.
 
-Back then we framed **PhoneGap** (and the **Cordova** ecosystem) as the path from HTML, CSS, and JavaScript to Android and other targets without rewriting everything in native code. The stack was new to me; every screen, asset, and workaround was part of that first adventure.
+We used **PhoneGap** (and the **Cordova** ecosystem) so we could ship from the web stack we already knew—HTML, CSS, and JavaScript—while still targeting Android without rewriting the whole product in native code. Screens, assets, and the quirks of hybrid tooling were all part of that semester’s deliverables and documentation.
 
-Years later I recovered the original web assets and published them again as a static site so the work would not disappear on an old hard drive or a lost build folder. The original app credited **Sergio, Camilo, and Miguel** as authors—this README is my personal look back at that first mobile experiment; the product vision above was ours as a small team at the time.
+Years later I recovered the original web assets and published them again as a static site so the coursework and the app itself would not vanish on an old drive or a lost build folder. The product vision below is the one we wrote and defended at the time as a team; this README is my way of preserving that story in English for the public repo.
 
 ## Live site
 
