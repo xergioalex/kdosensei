@@ -4,13 +4,21 @@ This repository holds the web layer of **KDoSensei**. **In 2013 I built it as pa
 
 We used **PhoneGap** (and the **Cordova** ecosystem) so we could ship from the web stack we already knew—HTML, CSS, and JavaScript—while still targeting Android without rewriting the whole product in native code. Screens, assets, and the quirks of hybrid tooling were all part of that semester’s deliverables and documentation.
 
-Years later I recovered the original web assets and published them again as a static site so the coursework and the app itself would not vanish on an old drive or a lost build folder. The product vision below is the one we wrote and defended at the time as a team; this README is my way of preserving that story in English for the public repo.
+**Years later**, while **going through my old university files and backups**, I **ran into this project again**. I wanted to **keep it around like a time machine**—an intact snapshot of that semester, the team, and the hybrid tooling—instead of losing it in a dusty zip or an old drive, so I **put the web assets back online** at **[https://kdosensei.xergioalex.com](https://kdosensei.xergioalex.com)** and collected them in this repository.
 
 ## Live site
 
 The recovered web app is hosted here:
 
 **[https://kdosensei.xergioalex.com](https://kdosensei.xergioalex.com)**
+
+## Screenshots (2013)
+
+Reference composites from the original **Karate App** as it shipped in the PhoneGap shell: glossy black bars, **Spanish** UI, **Karate** vs **Defensa personal** entry, main menu (**Historia del Karate**, **Glosario**, **Guías del Karate** with belt list), and example **kihon** screens with photo plus short technique text.
+
+![Karate App — home tabs, main menu, and belt guides](./assets/karate-app-screens-menus-and-belts.png)
+
+![Karate App — kihon detail: Tettsui-uchi, Oi-zuki, Gedan-barai](./assets/karate-app-screens-kihon-techniques.png)
 
 ## What we set out to build (2013)
 
@@ -34,6 +42,7 @@ When we looked at what existed in the market, the elements that stood out as **m
 ## Repository layout
 
 - `www/` — application entry (`index.html`), styles, media, and historical `config.xml` for the PhoneGap/Cordova widget metadata.
+- `assets/` — README reference screenshots of the 2013 app UI.
 
 ## License
 
