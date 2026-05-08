@@ -1,4 +1,4 @@
-# KDo Sensei (Karate App)
+# KDoSensei (Karate App)
 
 This repository holds the web layer of **KDo Sensei**—a project that started in **2013** as my **first attempt at building a mobile app**. I was learning how hybrid apps worked, chasing the idea that something I built could live on a phone and help people study Karate the way I wished I could have when I started training.
 
@@ -10,7 +10,7 @@ Years later I recovered the original web assets and published them again as a st
 
 The recovered web app is hosted here:
 
-**https://kdosensei.xergioalex.com**
+**[https://kdosensei.xergioalex.com](https://kdosensei.xergioalex.com)**
 
 ## What we set out to build (2013)
 
