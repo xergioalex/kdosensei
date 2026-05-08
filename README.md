@@ -42,7 +42,6 @@ When we looked at what existed in the market, the elements that stood out as **m
 ## Repository layout
 
 - `www/` — application entry (`index.html`), styles, media, and historical `config.xml` for the PhoneGap/Cordova widget metadata.
-- `assets/` — README reference screenshots of the 2013 app UI.
 
 ## License
 
