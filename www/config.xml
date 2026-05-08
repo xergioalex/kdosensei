@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.phonegap.example" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Karate App</name>
+    <icon gap:density="ldpi" gap:platform="android" src="media/img/cabecera.jpg" />
+    <gap:splash gap:density="ldpi" gap:platform="android" src="media/img/splash.jpg" />
+    <gap:splash gap:density="mdpi" gap:platform="android" src="media/img/splash.jpg" />
+    <gap:splash gap:density="hdpi" gap:platform="android" src="media/img/splash.jpg" />
+    <gap:splash gap:density="xhdpi" gap:platform="android" src="media/img/splash.jpg" />
+    <description>
+Aplicación ilustrada para el aprendizaje del Karate.
+</description>
+    <preference name="permissions" value="none" />
+    <author>
+Sergio - Camilo - Miguel
+</author>
+    <content src="index.html" />
+</widget>

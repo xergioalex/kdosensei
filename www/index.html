@@ -1,0 +1,378 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Karate App</title>
+<meta name="author" content="Sergio, Camilo, Miguel" />
+
+<!-- JQuery Mobile && Photoswipe -->
+<link href="media/photoswipe/jquery-mobile-photoswipe.css" type="text/css" rel="stylesheet" />
+<link href="media/photoswipe/photoswipe.css" type="text/css" rel="stylesheet" />  
+<script src="media/jquery-mobile/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="media/photoswipe/klass.min.js" type="text/javascript"></script>
+<script src="media/photoswipe/code.photoswipe.jquery-3.0.5.min.js" type="text/javascript"></script>
+<link href="media/css/style.css" rel="stylesheet" type="text/css"/>
+<link href="media/jquery-mobile/jquery.mobile-1.2.1.min.css" rel="stylesheet" type="text/css"/>
+<script src="media/jquery-mobile/jquery.mobile-1.2.1.min.js" type="text/javascript"></script>
+<script src="media/photoswipe/photoswipe.js" type="text/javascript"></script>
+<!-- Fin JQuery Mobile && Photoswipe -->
+
+<!-- Poblar Aplicacion -->
+<script src="media/js/websql-polyfill.js" type="text/javascript"></script>
+<script src="media/js/basedatos.js" type="text/javascript"></script>
+<script src="media/js/glosario.js" type="text/javascript"></script>
+<script src="media/js/cinturones.js" type="text/javascript"></script>
+<script src="media/js/kihones.js" type="text/javascript"></script>
+<script src="media/js/katas.js" type="text/javascript"></script>
+<!-- Fin Poblar Aplicacion -->
+
+<script type="text/javascript">
+    // Espera a que PhoneGap se inicie
+    function onBodyLoad()
+    {   
+        onDeviceReady();     
+        //document.addEventListener("deviceready", onDeviceReady, false);
+    }    
+
+    function onDeviceReady(){
+        poblarAplicacion();
+        
+    }
+</script>
+
+</head> 
+<body onload="onBodyLoad()"> 
+    <!-- Pagina Seleccion de disciplina -->
+    <div data-role="page" id="inicio">
+        <div data-role="header">
+            <div class="ui-grid-a">
+                <div class="ui-block-a " >
+                    <center><h3>Karate</h3></center>
+                </div>
+                <div class="ui-block-b">
+                    <center><h3>Defensa Personal</h3></center>
+                </div>
+            </div>
+        </div>
+        <div data-role="content">   
+            <div class="ui-grid-a">
+                <div class="ui-block-a " >
+                    <a href="#karate">
+                        <img class="img_inicio" src="media/img/karate.jpg"  width="100%"  height="270px" />
+                    </a>                    
+                </div>
+                <div class="ui-block-b">
+                    <a href="#defensa_personal">
+                        <img class="img_inicio" src="media/img/defensa_personal.jpg"  width="100%"  height="270px" />
+                    </a>
+                </div>
+            </div>
+
+            <table data-role="table" id="tabla-automatica" data-mode="reflow" class="ui-responsive table-stroke">
+                
+            </table>
+        </div>
+        <div data-role="footer">
+            <h4>Karate App</h4>
+        </div>
+    </div>
+    <!-- Fin Pagina Seleccion de disciplina -->
+
+    <!-- KARATE -->
+
+    <!-- Pagina Karate -->
+    <div data-role="page" id="karate"  data-add-back-btn="true" data-back-btn-text="atras">
+        <div data-role="header" >
+            <h1>Karate</h1>
+        </div>
+        <div data-role="content">   
+            <ul data-role="listview" class="ui-listview" data-ajax="false" data-theme="d">                
+                <li>                    
+                    <a href="#karate-historia" >
+                        <h3>Historia del Karate</h3>                        
+                        <p>Detalles de la aparición del karate.</p>
+                        <img src="media/img/karate-historia-thumbnail.jpg">
+                    </a>                                            
+                </li>
+                <li>                    
+                    <a href="#karate-glosario" data-transition="slide">
+                        <h3>Glosario del Karate</h3>
+                        <p>Vocabulario técnico del karate.</p>
+                        <img src="media/img/karate-glosario-thumbnail.jpg">
+                    </a>                                            
+                </li>
+                <li>                    
+                    <a href="#karate-guia" data-transition="slide">
+                        <h3>Guias del Karate</h3>                        
+                        <p>Técnicas y movimientos del karate.</p>
+                        <img src="media/img/karate-guias-thumbnail.jpg">
+                    </a>                                            
+                </li>                
+            </ul>        
+        </div>
+        <div data-role="footer">
+            <h4>Karate App</h4>
+        </div>
+    </div>
+    <!-- Fin Pagina Karate -->
+
+    <!-- Pagina Historia del Karate -->
+    <div data-role="page" id="karate-historia"  data-add-back-btn="true" data-back-btn-text="atras">
+        <div data-role="header" >
+            <h1>Historia del Karate</h1>
+        </div>
+        <div data-role="content" class="ui-content" role="main">
+            <h2 >Historia del Karate</h2>
+            <img src="media/img/karate-historia.jpg" alt="Historia del Karate" width="250px" height="180px">
+            <h4>Orígenes y desarrollo del Karate</h4>
+            <p>El Arte Marcial conocido como Te, surgió en Okinawa como uno de los sistemas de combate, desarrollado como método de defensa personal, debido a la prohibición de las armas, impuesta por los gobernantes Japoneses en el Siglo XVI sobre la Población de Okinawa. Uno de los principales maestros reconocidos de esta forma de combate fue Shungo Sakugawa (1733-1815), que recibió su instrucción directa de un monje llamado Peichin Takahara. </p>
+            <h4>Isla de Okinawa</h4>
+            <p>Shungo Sakugawa enseño el arte Marcial a Soken Matsumura (uno de los artistas marciales más grandes de la historia). 
+            La raíz de la mayoría de los estilos de Karate que se desarrollaron en Okinawa, se encuentran en la conexión Sakuwaga-Matsumura. 
+            Se desarrollaron tres centros de estudios importantes de Karate en Okinawa en el siglo XVIII. Uno de ellos estaba en la antigua capital de Shuri, donde vivían los nobles y la familia real. El segundo centro se formo en Nahara, en el puerto principal de la isla. Y el tercero en Tomari. Cada una de estas ciudades eventualmente desarrollo su propio estilo.</p> 
+            <h4>Shuri-Te</h4>
+            <p>Sakuwaga también fue considerado como uno de los maestros de Shuri-Te, debido a que vivía en esta ciudad, este tenia casi 70 años, cuando un niño llamado Matsumura empezó a entrenar con él, convirtiéndose éste en su mejor alumno, luego de la muerte de Sakugawa, Matsumura llego a ser el mejor Instructor de Shuri-Te. 
+            Este estilo fue influenciado por estilos duros de Shaolin. </p>
+            <h4>Tomari-Te</h4>
+            <p>Tomari esta cerca del pequeño pueblo de Kumemura, que estaba habitado por un gran numero de militares entrenados en distintos estilos de Artes Marciales. Entre todos estos estilos habían sistemas duros descendientes del Templo Shaolin, a igual de estilos internos que procedían de otros lugares de China, por lo que el Tomari-Te fue influenciado tanto por estilos duros como por los suaves. 
+            Uno de los primeros maestros de Tomari-Te fue Kosaku Matsumora, quien enseñaba el estilo en secreto, sin embargo unos pocos estudiantes de Matsumora llegaron a conseguir un nivel lo suficientemente notable como para pasar el Arte. 
+            Otro importante instructor de Tomari-Te fue Kokan Oyadomari, el primer instructor del gran Chotoku Kyan. </p>
+            <h4>Naha-Te</h4>
+            <p>De los tres estilos significativos de aquella época en Okinawa, el Naha-Te era el estilo que más fue influenciado por los sistemas internos chinos y el que menos contacto había tenido con la tradición de Shaolin. El maestro mas grande de Naha-Te fue Kanryo Higashionna, quien estudio con Matsumura del estilo Shuri-Te, pero solo durante un periodo corto.  Kanryo Higashionna era muy joven cuando se traslado a China, donde permaneció durante muchos años. Cuando regreso a Naha, abrió una escuela que enfatizaba patrones de movimientos de respiración muy utilizados en los estilos internos chinos, este tuvo grandes alumnos que llegaron a ser famosos por ellos mismos, entre los que se encontraban Chojun Miyagi y Kenwa Mabuni. </p>
+            </p>
+        </div>
+        <div data-role="footer">
+            <h4>Karate App</h4>
+        </div>
+    </div>
+    <!-- Fin Pagina Historia del Karate -->
+
+    <!-- Pagina Lista Glosario del Karate -->    
+    <div data-role="page" id="karate-glosario"  data-add-back-btn="true" data-back-btn-text="atras">
+        <div data-role="header" >
+            <h1>Glosario del Karate</h1>
+        </div>        
+        <div data-role="content" class="ui-content" role="main">
+            <ul id="glosario" data-role="listview" data-filter="true" data-filter-placeholder="Buscar palabras..." data-inset="true">
+            </ul>
+        </div>        
+        <div data-role="footer">
+            <h4>Karate App</h4>
+        </div>
+    </div>    
+    <!-- Fin Pagina Lista Glosario del Karate -->    
+    
+    <!-- Pagina Elemento Glosario del Karate -->
+    <div data-role="page" id="karate-glosario-item"  data-add-back-btn="true" data-back-btn-text="atras">
+        <div data-role="header" id="titulo_glosario"> 
+            <h1></h1>           
+        </div>
+        <div data-role="content" class="ui-content" role="main" id="contenido_glosario">
+            <img src="" />
+            <p></p>
+        </div>
+        <div data-role="footer">
+            <h4>Karate App</h4>
+        </div>
+    </div>
+    <!-- Fin Pagina Elemento Glosario del Karate -->
+
+    <!-- Pagina Cinturones del Karate -->
+    <div data-role="page" id="karate-guia"  data-add-back-btn="true" data-back-btn-text="atras">
+        <div data-role="header" >
+            <h1>Guias del Karate</h1>
+        </div>
+        <div data-role="content">   
+            <ul id="guias_del_karate" data-role="listview" class="ui-listview" data-ajax="false" data-theme="d">                
+            </ul>        
+        </div>
+        <div data-role="footer">
+            <h4>Karate App</h4>
+        </div>
+    </div>
+    <!-- Fin Pagina Cinturones del Karate -->
+
+    <!-- Pagina Guia Cinturon de Karate -->
+    <div data-role="page" id="karate-cinturon"  data-add-back-btn="true" data-back-btn-text="atras">
+        <div data-role="header" id="titulo_cinturon_karate">
+            <h1></h1>
+        </div>
+        <div data-role="content">   
+            <ul id="guias_del_karate" data-role="listview" class="ui-listview" data-ajax="false" data-theme="d">
+                <li>                    
+                    <a href="#" id="karate-kihones">
+                        <h3>Kihones</h3>                        
+                        <p>Movimientos tecnicos.</p>
+                        <img src="media/img/karate-kihon-thumbnail.jpg">
+                    </a>                                            
+                </li>
+                <li>                    
+                    <a href="#" id="karate-katas">
+                        <h3>Katas</h3>
+                        <p>Secuencia de Kihones.</p>
+                        <img src="media/img/karate-kata-thumbnail.jpg">
+                    </a>                                            
+                </li>
+            </ul>        
+        </div>
+        <div data-role="footer">
+            <h4>Karate App</h4>
+        </div>
+    </div>
+    <!-- Fin Pagina Guia Cinturon de Karate -->
+
+    <!-- Pagina Lista Kihones Cinturon Blanco de Karate -->
+    <div data-role="page" id="karate-kihones-blanco"  data-add-back-btn="true" data-back-btn-text="atras">
+        <div data-role="header">
+            <h1>Kihones Karate Blanco</h1>
+        </div>        
+        <div data-role="content" class="ui-content" role="main">
+            <ul id="kihones-blanco" data-role="listview" data-filter="true" data-filter-placeholder="Buscar palabras..." data-inset="true">
+
+            </ul>
+        </div>        
+        <div data-role="footer">
+            <h4>Karate App</h4>
+        </div>
+    </div>    
+    <!-- Fin Pagina Lista Kihones Cinturon Amarillo de Karate -->
+
+    <!-- Pagina Lista Kihones Cinturon Amarillo de Karate -->
+    <div data-role="page" id="karate-kihones-amarillo"  data-add-back-btn="true" data-back-btn-text="atras">
+        <div data-role="header">
+            <h1>Kihones Karate Amarillo</h1>
+        </div>        
+        <div data-role="content" class="ui-content" role="main">
+            <ul id="kihones-amarillo" data-role="listview" data-filter="true" data-filter-placeholder="Buscar palabras..." data-inset="true">
+
+            </ul>
+        </div>        
+        <div data-role="footer">
+            <h4>Karate App</h4>
+        </div>
+    </div>    
+    <!-- Fin Pagina Lista Kihones Cinturon de Karate -->
+    
+    <!-- Pagina Elemento Kihon del Karate -->
+    <div data-role="page" id="karate-kihon-item"  data-add-back-btn="true" data-back-btn-text="atras">
+        <div data-role="header" id="titulo_kihon"> 
+            <h1></h1>           
+        </div>
+        <div data-role="content" class="ui-content" role="main" id="contenido_kihon">
+            <img src="" />
+            <p></p>
+        </div>
+        <div data-role="footer">
+            <h4>Karate App</h4>
+        </div>
+    </div>
+    <!-- Fin Pagina Elemento Kihon del Karate -->
+
+    <!-- Pagina Lista Katas Cinturon Blanco de Karate -->
+    <div data-role="page" id="karate-katas-blanco"  data-add-back-btn="true" data-back-btn-text="atras">
+        <div data-role="header" >
+            <h1>Katas Cinturon Blanco</h1>
+        </div>        
+        <div data-role="content" class="ui-content" role="main">
+            <ul id="katas-blanco" data-role="listview" data-filter="true" data-filter-placeholder="Buscar palabras..." data-inset="true">
+
+            </ul>
+        </div>        
+        <div data-role="footer">
+            <h4>Karate App</h4>
+        </div>
+    </div>    
+    <!-- Fin Pagina Lista Katas Cinturon Blanco de Karate -->
+
+    <!-- Pagina Lista Katas Cinturon amarillo de Karate -->
+    <div data-role="page" id="karate-katas-amarillo"  data-add-back-btn="true" data-back-btn-text="atras">
+        <div data-role="header">
+            <h1>Katas Cinturon Amarillo</h1>
+        </div>        
+        <div data-role="content" class="ui-content" role="main">
+            <ul id="katas-amarillo" data-role="listview" data-filter="true" data-filter-placeholder="Buscar palabras..." data-inset="true">
+
+            </ul>
+        </div>        
+        <div data-role="footer">
+            <h4>Karate App</h4>
+        </div>
+    </div>    
+    <!-- Fin Pagina Lista Katas Cinturon amarillo de Karate -->
+
+    <!-- Pagina Elemento Kata del Karate -->
+    <div data-role="page" id="karate-kata-item"  data-add-back-btn="true" data-back-btn-text="atras" class="gallery-page">
+        <div data-role="header" id="titulo_kata"> 
+            <h1></h1>           
+        </div>
+        <div data-role="content"  id="contenido_kata">
+           <ul class="gallery">
+                <!--
+                <li><a href="images/full/010.jpg" rel="external"><img src="images/thumb/010.jpg" alt="Image 010" /></a></li>
+                <li><a href="images/full/011.jpg" rel="external"><img src="images/thumb/011.jpg" alt="Image 011" /></a></li>
+                <li><a href="images/full/012.jpg" rel="external"><img src="images/thumb/012.jpg" alt="Image 012" /></a></li>
+                <li><a href="images/full/013.jpg" rel="external"><img src="images/thumb/013.jpg" alt="Image 013" /></a></li>
+                <li><a href="images/full/014.jpg" rel="external"><img src="images/thumb/014.jpg" alt="Image 014" /></a></li>
+                <li><a href="images/full/015.jpg" rel="external"><img src="images/thumb/015.jpg" alt="Image 015" /></a></li>
+                <li><a href="images/full/016.jpg" rel="external"><img src="images/thumb/016.jpg" alt="Image 016" /></a></li>
+                <li><a href="images/full/017.jpg" rel="external"><img src="images/thumb/017.jpg" alt="Image 017" /></a></li>
+                <li><a href="images/full/018.jpg" rel="external"><img src="images/thumb/018.jpg" alt="Image 018" /></a></li>
+                -->
+            </ul>
+        </div>
+        <div data-role="footer">
+            <h4>Karate App</h4>
+        </div>
+    </div>
+    <!-- Fin Pagina Elemento Kata del Karate -->
+
+    <!-- FIN KARATE -->
+
+
+
+
+
+
+
+
+
+
+     <!-- Defensa Personal -->
+    <div data-role="page" id="defensa_personal"  data-add-back-btn="true" data-back-btn-text="atras">
+        <div data-role="header" >
+            <h1>Defensa Personal</h1>
+        </div>
+        <div data-role="content">   
+            <ul data-role="listview" class="ui-listview" data-ajax="false" data-theme="d">
+                <!--<li data-role="list-divider">Karate</li>-->
+                <li>                    
+                    <a href="#karate-defensa" >
+                        <h3>Defensa a Mano Limpia</h3>                        
+                        <p>Guias de defensa a mano limpia.</p>
+                        <img src="media/img/defensa_personal-mano-limpia-thumbnail.jpg">
+                    </a>                                            
+                </li>
+                <li>                    
+                    <a href="#karate-defensa" >
+                        <h3>Defensa Contra Arma Blanca</h3>
+                        <p>Guias de Defensa contra arma blanca.</p>
+                        <img src="media/img/defensa_personal-arma-blanca-thumbnail.jpg">
+                    </a>                                            
+                </li>
+                <li>                    
+                    <a href="#karate-defensa" >
+                        <h3>Defensa Contra Arma de Fuego</h3>                        
+                        <p>Guias de defensa contra arma de fuego.</p>
+                        <img src="media/img/defensa_personal-arma-fuego-thumbnail.jpg">
+                    </a>                                            
+                </li>                
+            </ul>        
+        </div>
+        <div data-role="footer">
+            <h4>Karate App</h4>
+        </div>
+    </div>
+    <!-- Fin Defensa Personal -->
+
+</body>
+</html>
